@@ -1,0 +1,197 @@
+body {
+	font-family: 'Fauna+One', sans-serif;
+	color: yellow;
+	background: #420600 url('img/metal-texture.jpg') repeat;
+}
+
+a {
+	color: #2A0400;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+h1 {
+	font-family: 'Vibur', serif;
+    font-size: 1.750em;
+    letter-spacing: -1.5px;
+}
+
+h2 {
+	font-family: 'Vibur', serif;
+	font-size: 2.5em;
+	color: #2A0400;
+	text-shadow: 3px 3px 3px #FFCC00;
+}
+
+#nav {
+	font-family: 'Vibur', serif;
+	list-style: none;
+	width: 100%;
+	text-align: center;
+	padding: 1% 0 0 0;
+	margin: 7% 0 0 0;
+}
+
+#nav li {
+	float: left;
+	width: 240px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 1%;
+	border: 4px double #FFCC99;
+	border-radius: 20px;
+}
+
+#nav li a {
+	color: yellow;
+	font-size: 1.750em;
+	text-shadow: 3px 3px 3px #2A0400;
+}
+
+#nav img {
+	width: 50px;
+	height: auto;
+	float: left;
+}
+
+#nav li:hover {
+	margin-top: -0.5%;
+	border-color: gray;
+	border-radius: 40px;
+	background: #FFCC00;
+}
+
+#nav li a:hover {
+	color: gray;
+}
+
+#me {
+	border-top: 5px dotted white;
+	border-bottom: 5px dotted white;
+}
+
+
+#intro {
+	color: #FFCC00;
+	text-shadow: 3px 3px 3px #2A0400;
+}
+
+#quirk img {
+	border: 5px dotted white;
+	margin-top: 80px;
+	width: 450px;
+	height: auto;
+}
+
+#love img {
+	border: 5px dotted white;
+	width: 450px;
+	height: auto;
+}
+
+#copyright {
+	color: yellow;
+	border-top: 4px #FFCC99;
+	border-top-style: double;
+	padding: 1% 0;
+	margin: 1.5% 0;
+	text-align: center;
+}
+
+.grid_12 {
+	text-align: center;
+}
+
+.btn {
+	font-family: 'Vibur', serif;
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #FFCC00;
+	background: gray;
+	padding: 1.5% 1.5% 1.5% 1.5%;
+	border-top: 3px dotted yellow;
+	border-bottom: 3px dotted yellow;
+	border-radius: 40px;
+}
+
+.btn:hover {
+	background: #2A0400;
+	color: yellow;
+	text-shadow: 5px 5px 5px #FFCC00;
+	margin-right: 50px;
+	border: none;
+	border-radius: 20px;
+}
+
+/* Media Queries */
+/*small resolution*/
+@media screen and (max-width: 650px) {
+
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		width: 100%;
+	}
+
+	#nav li.about,
+	#nav li.resume,
+	#nav li.blog{
+		width: 30.5%;
+		font-size: 0.75em;
+	}
+
+	#nav li.contact {
+		width: 95%;
+	}
+
+	#nav li img {
+		display: none;
+	}
+
+	#intro {
+		display: none;
+	}
+
+	#love {
+		margin: 0 0 10% 0;
+	}
+	#quirk img {
+		margin: 0 0 10% 0;
+	}
+
+}
+
+/*medium resolution*/
+@media screen and (max-width: 1024px) {
+
+	#nav li {
+		width: 48%;
+	}
+	h2 {
+		text-align: center;
+	}
+	#love {
+		width: 100%;
+	}
+	#quirk {
+		width: 100%;
+	}
+	#love img {
+		width: 100%;
+	}
+	#quirk img {
+		width: 100%;
+	}
+}
